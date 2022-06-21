@@ -6,12 +6,13 @@ public class GameManager : MonoBehaviour
 {
     public GameObject target_up;
     public GameObject target_down;
+    int score = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-	SpawnUp();
-	SpawnDown();
+	InvokeRepeating("SpawnUp",2f,2f);
+	InvokeRepeating("SpawnDown",2f,2f);
     }
 
     // Update is called once per frame
@@ -38,5 +39,11 @@ public class GameManager : MonoBehaviour
         Vector3 randomPosition = new Vector3(randomX, fixedY, 0);
 
         Instantiate(target_down,randomPosition,Quaternion.identity);
+    }
+
+    public void IncrementScore()
+    {
+	score++;
+	print(score);
     }
 }
