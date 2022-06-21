@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
+    public GameManager gameManager;
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();  //Find the script "GameManager" inside the object"GameManager
     }
 
     // Update is called once per frame
@@ -18,6 +19,8 @@ public class Target : MonoBehaviour
 
     private void OnMouseDown()
     {
+        gameManager.IncrementScore();
+        
         Destroy(gameObject);
     }
 

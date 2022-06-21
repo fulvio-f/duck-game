@@ -6,11 +6,14 @@ public class GameManager : MonoBehaviour
 {
     public GameObject target_up;
     public GameObject target_down;
+    
+    int score = 0;
     // Start is called before the first frame update
     void Start()
     {
-        Spawn_up();
-        Spawn_down();
+
+        InvokeRepeating("Spawn_up",1f,2f);
+        InvokeRepeating("Spawn_down",1f,2f);
     }
 
     // Update is called once per frame
@@ -19,12 +22,14 @@ public class GameManager : MonoBehaviour
         
     }
 
+   
+
     void Spawn_up()
     {
         float Randx = Random.Range(-6.69f,7.4f);
         float y = -0.49f;
 
-        Vector3 randPosition = new Vector3(Randx,y,1);
+        Vector3 randPosition = new Vector3(Randx,y,0);
 
         Instantiate(target_up, randPosition, Quaternion.identity);
     }
@@ -34,9 +39,15 @@ public class GameManager : MonoBehaviour
         float Randx = Random.Range(-6.69f,7.4f);
         float y = -1.86f;
 
-        Vector3 randPosition = new Vector3(Randx,y,4);
+        Vector3 randPosition = new Vector3(Randx,y,0);
 
-        Instantiate(target_up, randPosition, Quaternion.identity);
+        Instantiate(target_down, randPosition, Quaternion.identity);
+    }
+
+    public void IncrementScore()
+    {
+        score++;
+        print(score);
     }
 }
 

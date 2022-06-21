@@ -11,7 +11,7 @@ public class setCursor : MonoBehaviour
     {
         Vector2 cursorOffset = new Vector2(crosshair.width/2, crosshair.height/2);
 
-        Cursor.SetCursor(crosshair, cursorOffset, CursorMode.Force);
+        Cursor.SetCursor(crosshair, cursorOffset, CursorMode.ForceSoftware);
     }
 
     // Update is called once per frame
