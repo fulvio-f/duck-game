@@ -8,6 +8,7 @@ public class Target : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Destroy(gameObject, 2f);
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();  //Find the script "GameManager" inside the object"GameManager
     }
 
@@ -20,7 +21,7 @@ public class Target : MonoBehaviour
     private void OnMouseDown()
     {
         gameManager.IncrementScore();
-        
+
         Destroy(gameObject);
     }
 

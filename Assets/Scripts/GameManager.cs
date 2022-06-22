@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject target_up;
     public GameObject target_down;
+    public TMP_Text scoreText;
     
+    bool stop = False
     int score = 0;
     // Start is called before the first frame update
     void Start()
@@ -19,7 +22,11 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(win == true)
+        {
+            CancelInvoke("Spawn_up")
+            CancelInvoke("Spawn_down")
+        }
     }
 
    
@@ -48,6 +55,8 @@ public class GameManager : MonoBehaviour
     {
         score++;
         print(score);
+
+        scoreText.text = score.ToString();
     }
 }
 
