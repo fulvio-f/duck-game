@@ -1304,7 +1304,6 @@ GameObject:
   - component: {fileID: 1734732259}
   - component: {fileID: 1734732258}
   - component: {fileID: 1734732260}
-  - component: {fileID: 1734732261}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1356,21 +1355,6 @@ MonoBehaviour:
   target_down: {fileID: 6651268310103411574, guid: 475a44aa0a7425940827212d79203c01, type: 3}
   EndMenu: {fileID: 225832205}
   scoreText: {fileID: 2018140086}
-  difficulty: {fileID: 1734732261}
-  diff: 1
---- !u!114 &1734732261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734732257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b8a0c02aa9949439efeaa4b978018a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Scale: 1
 --- !u!1 &1943439463
 GameObject:
   m_ObjectHideFlags: 0
