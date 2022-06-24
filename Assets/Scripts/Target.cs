@@ -5,17 +5,14 @@ using UnityEngine;
 public class Target : MonoBehaviour
 {
     public GameManager gameManager;
+
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject, 2f);
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();  //Find the script "GameManager" inside the object"GameManager
-    }
+        int diff2 = gameManager.PassDiff();
+        Destroy(gameObject, 1.5f*diff2);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void OnMouseDown()

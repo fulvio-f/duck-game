@@ -666,6 +666,7 @@ GameObject:
   - component: {fileID: 547905436}
   - component: {fileID: 547905435}
   - component: {fileID: 547905434}
+  - component: {fileID: 547905437}
   m_Layer: 5
   m_Name: Hard Button
   m_TagString: Untagged
@@ -750,6 +751,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 547905437}
+        m_TargetAssemblyTypeName: Difficulty, Assembly-CSharp
+        m_MethodName: Hard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 568232824}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -800,6 +813,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547905432}
   m_CullTransparentMesh: 1
+--- !u!114 &547905437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547905432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b8a0c02aa9949439efeaa4b978018a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scale: 1
 --- !u!1 &568232824
 GameObject:
   m_ObjectHideFlags: 0
@@ -1225,6 +1251,7 @@ GameObject:
   - component: {fileID: 664428086}
   - component: {fileID: 664428085}
   - component: {fileID: 664428084}
+  - component: {fileID: 664428087}
   m_Layer: 5
   m_Name: Easy Button
   m_TagString: Untagged
@@ -1309,6 +1336,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 664428087}
+        m_TargetAssemblyTypeName: Difficulty, Assembly-CSharp
+        m_MethodName: Easy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 568232824}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -1359,6 +1398,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 664428082}
   m_CullTransparentMesh: 1
+--- !u!114 &664428087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664428082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b8a0c02aa9949439efeaa4b978018a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scale: 1
 --- !u!1 &795037159
 GameObject:
   m_ObjectHideFlags: 0
@@ -2445,6 +2497,7 @@ GameObject:
   - component: {fileID: 1788824793}
   - component: {fileID: 1788824792}
   - component: {fileID: 1788824791}
+  - component: {fileID: 1788824794}
   m_Layer: 5
   m_Name: Medium Button
   m_TagString: Untagged
@@ -2529,6 +2582,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1788824794}
+        m_TargetAssemblyTypeName: Difficulty, Assembly-CSharp
+        m_MethodName: Medium
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 568232824}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -2579,6 +2644,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1788824789}
   m_CullTransparentMesh: 1
+--- !u!114 &1788824794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788824789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b8a0c02aa9949439efeaa4b978018a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scale: 1
 --- !u!1 &1982189219
 GameObject:
   m_ObjectHideFlags: 0

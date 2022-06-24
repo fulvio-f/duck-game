@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public GameObject target_down;
     public GameObject EndMenu;
     public TMP_Text scoreText;
+    
+    public static int diff;
 
     int score = 0;
     float Countdown = 22f;    
@@ -17,7 +19,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("Spawn",1f,0.5f);
+        InvokeRepeating("Spawn",1f,0.5f * diff);
     }  
 
     // Update is called once per frame
@@ -67,5 +69,10 @@ public class GameManager : MonoBehaviour
         print(score);
 
         scoreText.text = score.ToString();
+    }
+
+    public int PassDiff()
+    {
+        return diff;
     }
 }
