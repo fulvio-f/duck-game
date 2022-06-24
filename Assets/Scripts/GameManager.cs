@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public GameObject target_down;
     public GameObject EndMenu;
     public TMP_Text scoreText;
+   
     
     public static int diff;
 
@@ -19,6 +20,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(diff == 0){diff = 3;}
         InvokeRepeating("Spawn",1f,0.5f * diff);
     }  
 
@@ -39,6 +41,14 @@ public class GameManager : MonoBehaviour
 	    scoreText.color = new Color32(255,247,5,255);
 	    EndMenu.SetActive(true);
 	}
+	
+	if(Input.GetMouseButtonDown(0))
+	{
+	    GetComponent<AudioSource>().Play();
+	}
+	
+	
+	
     }
 
     void Spawn()
@@ -69,6 +79,8 @@ public class GameManager : MonoBehaviour
         print(score);
 
         scoreText.text = score.ToString();
+        
+        
     }
 
     public int PassDiff()

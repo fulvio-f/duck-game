@@ -825,7 +825,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47b8a0c02aa9949439efeaa4b978018a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scale: 1
 --- !u!1 &568232824
 GameObject:
   m_ObjectHideFlags: 0
@@ -1002,7 +1001,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c7bd7e1f5fd57e7c983872ad0c603aa6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2cc78d3e67884bd18ac698ea424f3c85, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1410,7 +1409,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47b8a0c02aa9949439efeaa4b978018a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scale: 1
 --- !u!1 &795037159
 GameObject:
   m_ObjectHideFlags: 0
@@ -2656,7 +2654,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47b8a0c02aa9949439efeaa4b978018a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scale: 1
 --- !u!1 &1853813722
 GameObject:
   m_ObjectHideFlags: 0
